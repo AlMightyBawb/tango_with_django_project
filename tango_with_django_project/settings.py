@@ -21,6 +21,9 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
+# Login redirect
+LOGIN_URL = '/rango/login/'
+
 #removable
 print(__file__)
 print(os.path.dirname(__file__))

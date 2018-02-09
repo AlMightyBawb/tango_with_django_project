@@ -20,7 +20,9 @@
         <!-- Previously hardcoded as
           <a href="/rango/category/{{category.slug}}/add_page/">Add Page</a>
           -->
+        {% if user.is_authenticated %}
         <a href="{% url 'add_page' category.slug %}">Add Page</a>
+        {% endif %}
 
     {% else %}
         The specified category does not exist!
